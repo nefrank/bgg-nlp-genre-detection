@@ -115,3 +115,5 @@ dmypy.json
 
 .idea/
 .ipynb_checkpoints/
+data/test_df.pkl
+data/train_df.pkl
