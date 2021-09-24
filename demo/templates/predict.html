@@ -8,7 +8,7 @@
 	<h1>Game Guesser</h1><img src="{{ url_for('static',filename='images/') }}BGG.jpeg" width="350" height="175"/>
 	<h3>Board Game Genre Predictor</h3>
 	<div class="container">
-		<p>Enter a plot summary to get genre predictions.</p>
+		<p>Enter a game description to get genre predictions.</p>
 		<form action="" class="form-inline" method="post">
 			<textarea rows="12" cols="100" type="textarea" class="form-control" placeholder = "{{ my_string }}" name="plot" value="{{request.form.plot}}" >{% if my_string %}{{ my_string }}{% else %}Wingspan is a competitive, medium-weight, card-driven, engine-building board game from Stonemaier Games. It's designed by Elizabeth Hargrave and features over 170 birds illustrated by Beth Sobel, Natalia Rojas, and Ana Maria Martinez.
 
@@ -29,7 +29,7 @@ If you enjoy Terraforming Mars and Gizmos, we think this game will take flight a
 			<div class="results">
 			{% for g in results %}
 				<div class="genre_block">
-					<div class="genre_icon"><img  src="{{ url_for('static',filename='images/') }}{{g[1]}}.png" width="50" height="50"/></div>
+					<!--<div class="genre_icon"><img  src="{{ url_for('static',filename='images/') }}{{g[1]}}.png" width="50" height="50"/></div>-->
 					<div class="genre_name">{{g[1]}}</div>
 					<div class="genre_score">{{g[0]}} %</div>
 				<br />

@@ -2,10 +2,7 @@ from flask import Flask, render_template, flash, request
 
 #Importing the packages we will be using
 # Basic Packages
-import numpy as np
 import pandas as pd
-#pd.set_option('display.max_columns', 500)
-#np.set_printoptions(suppress=True)
 
 # NLTK Packages
 #import nltk
